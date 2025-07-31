@@ -1,0 +1,21 @@
+.cellBorder {
+    border: 1px solid rgb(160 160 160);
+    height: 100px;
+    width: 100px;
+    background-color: darkgoldenrod,
+}
+
+.caption {
+    color: rgb(18, 255, 18);
+    border: 6;
+    font-family: 'Courier';
+    font-size: '20pt'
+}
+
+.cell {
+    background-color: #c2129c;
+}
+
+.cell.alive {
+    background-color: black;
+}

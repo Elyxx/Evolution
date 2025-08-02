@@ -1,5 +1,5 @@
 import MainTable from "./components/MainTable";
-import Sphere from "./components/Sphere";
+import Field from "./components/Entities/Field";
 
 export default function Home() {
   const my2DArray = [
@@ -8,17 +8,11 @@ export default function Home() {
     [7, 1, 9, 8]
   ];
 
+  const fieldOfCells = new Field(7, 5).cells;
+
   return (
     <>
-      <div className="caption">
-        Full stack web developer course 2025-
-      </div>
-      <MainTable cells={my2DArray} />
-      <div className="caption">
-        just check
-      </div>
-      <Sphere />
+      <MainTable cells={fieldOfCells} />
     </>
-
   );
 }

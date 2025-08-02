@@ -20,13 +20,10 @@ export default function MainTable(props) {
             row.map((cell, colIndex) => (
                 <Sphere
                     key={`${rowIndex}-${colIndex}`}
-                    alive={cell}
-                /*className={`cell${cell == '1' ? '.alive' : ''}`}*/
+                    alive={cell.getState()}
                 />
             ))
         )}
 
     </div>
-
-
 }

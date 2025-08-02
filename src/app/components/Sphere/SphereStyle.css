@@ -1,21 +1,15 @@
 .dot {
     height: 25px;
     width: 25px;
-    background-color: #bf0909;
+    background-color: #0fbf09;
     border-radius: 50%;
     display: inline-block;
 }
 
-.dot.alive {
+.dotalive {
     height: 25px;
     width: 25px;
-    background-color: #bf0909;
+    background-color: #bf0985;
     border-radius: 50%;
     display: inline-block;
-}
-
-/*dot works, circle - not*, because its for different purpuse :) */
-.circle {
-    shape-outside: circle(50%);
-    clip-path: circle(50px);
 }

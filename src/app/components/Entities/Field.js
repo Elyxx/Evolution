@@ -30,7 +30,7 @@ class Field {
 
         for (let i = 0; i < this.rows; i++) {
             for (let j = 0; j < this.columns; j++) {
-                const family = [];
+                let family = [];
 
                 //origin
                 let row = i;
@@ -75,6 +75,7 @@ class Field {
 
     update() {
         for (let i = 0; i < this.rows; i++) {
+            this.next[i] = [];
             for (let j = 0; j < this.columns; j++) {
                 //temp array to keep new states
                 this.next[i][j] = this.cells[i][j].update();

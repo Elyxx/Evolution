@@ -27,12 +27,13 @@ class Cell {
 
     update() {
         //count living surrounding cells
+        let density = 0;
         density = this.family.filter(cell => cell.alive).length;
 
         //compute new state
         return density == 3 ?
             true :
-            density == 2 && alive ?
+            density == 2 && this.alive ?
                 true :
                 false;
     }
